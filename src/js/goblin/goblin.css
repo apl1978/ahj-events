@@ -1,0 +1,15 @@
+.hole {
+  width: 150px;
+  height: 150px;
+  margin: 0 15px 30px;
+  background: gray;
+  border-radius: 50%;
+}
+
+.active {
+  background-image: url("https://raw.githubusercontent.com/netology-code/ahj-homeworks/video/dom/pic/goblin.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: brown;
+}
