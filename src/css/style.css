@@ -1,7 +1,12 @@
-.field {
+.card {
   width: 800px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  margin-bottom: 0;
+  text-align: center;
 }
+
+.results {
+  font-weight: bold;
+  font-size: 30px;
+  height: 70px;  
+ }
 

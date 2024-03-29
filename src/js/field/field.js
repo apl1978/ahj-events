@@ -14,11 +14,8 @@ export default class Field {
 
     const goblin = new Goblin(this._element);
     for (let i = 0; i < 16; i++) {
-      goblin.addNewGoblin();
+      goblin.addNewHole();
     }
-
-    const activeGoblin = this._element.firstElementChild;
-    activeGoblin.classList.add('active');
 
     this.interval = setInterval(() => {
       goblin.toggleActive();
@@ -30,6 +27,7 @@ export default class Field {
         if (hole.classList.contains('active')) {
           this._hits++;
           this._hitElement.innerText = this._hits;
+          goblin.hideGoblin();
         } else {
           this._misses++;
           this._missElement.innerText = this._misses;
